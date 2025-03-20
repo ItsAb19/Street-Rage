@@ -16,9 +16,13 @@ public class PlayerScript : MonoBehaviour
     {
         Vector2 vel = rb.velocity;
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             vel.y = speed;
+        }
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            vel.y = 0;
         }
 
         rb.velocity = vel;
