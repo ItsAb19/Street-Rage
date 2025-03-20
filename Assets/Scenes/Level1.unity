@@ -286,6 +286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1826579021}
   speed: 3
+  stopDistance: 2
 --- !u!1 &362909896
 GameObject:
   m_ObjectHideFlags: 0
