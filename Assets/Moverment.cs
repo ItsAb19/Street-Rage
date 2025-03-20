@@ -1,37 +1,37 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class EnemyChase : MonoBehaviour
 {
-    // Reference to the player's Transform.
     public Transform player;
-    // Speed at which the enemy moves.
     public float speed = 3f;
-    // The distance at which the enemy will stop chasing.
     public float stopDistance = 1f;
+
+    private Rigidbody2D rb;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {
         if (player != null)
         {
-            // Calculate the distance between the enemy and the player.
-            float distance = Vector3.Distance(transform.position, player.position);
+            float distance = Vector2.Distance(transform.position, player.position);
 
-            // If the enemy is farther than the stop distance, keep moving toward the player.
             if (distance > stopDistance)
             {
-                transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+                // Use Rigidbody2D.MovePosition to avoid jittering
+                Vector2 direction = (player.position - transform.position).normalized;
+                rb.MovePosition(rb.position + direction * speed * Time.deltaTime);
             }
 
-            // Flip the enemy's x scale based on the player's position relative to the enemy.
+            // Flip the enemy's x scale based on the player's position
             Vector3 localScale = transform.localScale;
-            if (player.position.x > transform.position.x)
-            {
-                localScale.x = Mathf.Abs(localScale.x); // Face right
-            }
-            else
-            {
-                localScale.x = -Mathf.Abs(localScale.x); // Face left
-            }
+            localScale.x = (player.position.x > transform.position.x)
+                ? Mathf.Abs(localScale.x)  // Face right
+                : -Mathf.Abs(localScale.x); // Face left
             transform.localScale = localScale;
         }
     }
