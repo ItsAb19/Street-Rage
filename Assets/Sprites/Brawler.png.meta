@@ -184,7 +184,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Brawler_0: -2627942016926973551
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

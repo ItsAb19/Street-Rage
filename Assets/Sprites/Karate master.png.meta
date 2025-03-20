@@ -184,7 +184,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Karate master_0: 851285845123028058
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
