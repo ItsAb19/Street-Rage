@@ -34,6 +34,14 @@ public class PlayerScript : MonoBehaviour
         {
             transform.localScale = new Vector3(4, 4, 0);
         }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            transform.localScale = new Vector3(-4, 4, 0);
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            transform.localScale = new Vector3(4, 4, 0);
+        }
 
         rb.velocity = vel;
     }
