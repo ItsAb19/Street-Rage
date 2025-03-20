@@ -12,7 +12,7 @@ public class EnemyChase : MonoBehaviour
         if (player != null)
         {
             // Calculate target position while maintaining the enemy's current y-position.
-            Vector3 targetPosition = new Vector3(player.position.x, transform.position.y, player.position.z);
+            Vector3 targetPosition = new Vector3(player.position.x, player.position.y, player.position.z);
             // Move the enemy towards the target position.
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
         }
