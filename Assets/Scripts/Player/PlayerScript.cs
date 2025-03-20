@@ -3,58 +3,44 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     public float speed;
+    private Vector2 movement;
+
     Rigidbody2D rb;
+    Transform playerTransform;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerTransform = GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Vector2 vel = rb.velocity;
-        
-        //move up
-        if (Input.GetKeyDown(KeyCode.W))
+
+        // Get player input for horizontal and vertical movement
+        float moveX = Input.GetAxisRaw("Horizontal");  // Left/Right arrow keys or A/D
+        float moveY = Input.GetAxisRaw("Vertical");    // Up/Down arrow keys or W/S
+
+        movement = new Vector2(moveX, moveY).normalized;
+
+        if(Input.GetKeyDown(KeyCode.A))
         {
-            vel.y = speed;
+            transform.localScale = new Vector3(-4, 4, 0);
         }
-        if (Input.GetKeyUp(KeyCode.W))
-        {
-            vel.y = 0;
-        }
-        //move down
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            vel.y = -speed;
-        }
-        if (Input.GetKeyUp(KeyCode.S))
-        {
-            vel.y = 0;
-        }
-        //move left 
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            vel.x = -speed;
-        }
-        if (Input.GetKeyUp(KeyCode.A))
-        {
-            vel.x = 0;
-        }
-        //move right
         if (Input.GetKeyDown(KeyCode.D))
         {
-            vel.x = speed;
+            transform.localScale = new Vector3(4, 4, 0);
         }
-        if (Input.GetKeyUp(KeyCode.D))
-        {
-            vel.x = 0;
-        }
-
-
 
         rb.velocity = vel;
+    }
+
+    void FixedUpdate()
+    {
+        // Apply movement to the Rigidbody2D
+        rb.velocity = movement * speed;
     }
 }
