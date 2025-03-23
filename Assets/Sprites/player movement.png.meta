@@ -1,22 +1,37 @@
 fileFormatVersion: 2
-guid: 772d8112548cffd46bf0f621a50cc26f
+guid: d66d283a10c92cf42b6de43a3f76fee5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9181052201040363269
-    second: 2ffa84db-b7dc-4777-a679-731aa1d6f5d3 (1)_0
+      213: 8721939845764783752
+    second: player movement_0
   - first:
-      213: 5175855192969992153
-    second: 2ffa84db-b7dc-4777-a679-731aa1d6f5d3 (1)_1
+      213: -4099068806254313440
+    second: player movement_1
   - first:
-      213: -2083165601504098885
-    second: 2ffa84db-b7dc-4777-a679-731aa1d6f5d3 (1)_2
+      213: -7420747657747920239
+    second: player movement_2
   - first:
-      213: -6782136649033832188
-    second: 2ffa84db-b7dc-4777-a679-731aa1d6f5d3 (1)_3
+      213: 865981927328002282
+    second: player movement_3
   - first:
-      213: 1377253649546708459
-    second: 2ffa84db-b7dc-4777-a679-731aa1d6f5d3 (1)_4
+      213: -6687605218633947051
+    second: player movement_4
+  - first:
+      213: -1502180502545242756
+    second: player movement_5
+  - first:
+      213: 5797934375463084560
+    second: player movement_6
+  - first:
+      213: 6365648912279320752
+    second: player movement_7
+  - first:
+      213: 3573626753327748315
+    second: player movement_8
+  - first:
+      213: -5077720768106528156
+    second: player movement_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -164,10 +179,120 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 2ffa84db-b7dc-4777-a679-731aa1d6f5d3 (1)_0
+      name: player movement_0
       rect:
         serializedVersion: 2
         x: 14
+        y: 193
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e4089dd5a3e294f8d80778bfc6cafc
+      internalID: -356672669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player movement_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 193
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ef3160005df6e45a5abdc5b46688ce
+      internalID: -1588760552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player movement_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 193
+        width: 32
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f43f19e92294f948a43f37b65328de4
+      internalID: -1785711009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player movement_3
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 129
+        width: 33
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da716510e31db4e4195b6acdb73e5233
+      internalID: 1733573673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player movement_4
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 129
+        width: 33
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e674e316ff3a3b1479990329c875a91e
+      internalID: -291713834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player movement_5
+      rect:
+        serializedVersion: 2
+        x: 142
         y: 129
         width: 37
         height: 62
@@ -177,20 +302,20 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 50f34536556a96f70800000000000000
-      internalID: 9181052201040363269
+      spriteID: 5f7a4aa574202b04ab28365946c66f4b
+      internalID: -1052478256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2ffa84db-b7dc-4777-a679-731aa1d6f5d3 (1)_1
+      name: player movement_6
       rect:
         serializedVersion: 2
-        x: 80
-        y: 129
+        x: 16
+        y: 65
         width: 32
         height: 60
       alignment: 0
@@ -199,21 +324,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9d756d900e454d740800000000000000
-      internalID: 5175855192969992153
+      spriteID: 46b91e88544b5a04fb78e12005ddbbb3
+      internalID: -1081719318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2ffa84db-b7dc-4777-a679-731aa1d6f5d3 (1)_2
+      name: player movement_7
       rect:
         serializedVersion: 2
-        x: 15
+        x: 79
         y: 65
-        width: 33
+        width: 32
         height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -221,19 +346,19 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bb5090a2ceb1713e0800000000000000
-      internalID: -2083165601504098885
+      spriteID: 65894b4f390d1f44e873569e31dcccf9
+      internalID: -1266511448
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2ffa84db-b7dc-4777-a679-731aa1d6f5d3 (1)_3
+      name: player movement_8
       rect:
         serializedVersion: 2
-        x: 80
+        x: 144
         y: 65
         width: 38
         height: 61
@@ -243,16 +368,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4092e28a6a201e1a0800000000000000
-      internalID: -6782136649033832188
+      spriteID: bfef0e659c168674a9e20f3e9d7d4c57
+      internalID: -1524324019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 2ffa84db-b7dc-4777-a679-731aa1d6f5d3 (1)_4
+      name: player movement_9
       rect:
         serializedVersion: 2
         x: 17
@@ -265,10 +390,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: be587d2b5ecfc1310800000000000000
-      internalID: 1377253649546708459
+      spriteID: 832aed28a212d6b42969297dfb5cef4c
+      internalID: -575894201
       vertices: []
       indices: 
       edges: []
@@ -277,7 +402,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9960503404db8d547860dadb43e482d1
+    spriteID: 1a565e1bcc58263458732db5fd071a3a
     internalID: 0
     vertices: []
     indices: 
@@ -285,11 +410,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      2ffa84db-b7dc-4777-a679-731aa1d6f5d3 (1)_0: 9181052201040363269
-      2ffa84db-b7dc-4777-a679-731aa1d6f5d3 (1)_1: 5175855192969992153
-      2ffa84db-b7dc-4777-a679-731aa1d6f5d3 (1)_2: -2083165601504098885
-      2ffa84db-b7dc-4777-a679-731aa1d6f5d3 (1)_3: -6782136649033832188
-      2ffa84db-b7dc-4777-a679-731aa1d6f5d3 (1)_4: 1377253649546708459
+      player movement_0: -356672669
+      player movement_1: -1588760552
+      player movement_2: -1785711009
+      player movement_3: 1733573673
+      player movement_4: -291713834
+      player movement_5: -1052478256
+      player movement_6: -1081719318
+      player movement_7: -1266511448
+      player movement_8: -1524324019
+      player movement_9: -575894201
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

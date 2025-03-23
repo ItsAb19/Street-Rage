@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
@@ -5,18 +7,39 @@ public class PlayerScript : MonoBehaviour
     public float speed;
     private Vector2 movement;
 
+    private bool canDash = true;
+    private bool isDashing;
+    public float dashingPower = 24f;
+    private float dashingTime = 1f;
+    private float dashingCooldown = 1f;
+
     Rigidbody2D rb;
     Transform playerTransform;
-
+    Animator anim;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         playerTransform = GetComponent<Transform>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
+    {
+        if(isDashing)
+        {
+            return;
+        }
+        Movement();
+        if (Input.GetKey(KeyCode.D) && Input.GetKeyDown(KeyCode.Q) && movement.x > 0)
+        {
+            anim.SetBool("ForwardDash", true);
+            StartCoroutine(Dash());
+        }
+    }
+
+    void Movement()
     {
         Vector2 vel = rb.velocity;
 
@@ -26,7 +49,7 @@ public class PlayerScript : MonoBehaviour
 
         movement = new Vector2(moveX, moveY).normalized;
 
-        if(Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             transform.localScale = new Vector3(-4, 4, 0);
         }
@@ -46,6 +69,22 @@ public class PlayerScript : MonoBehaviour
         rb.velocity = vel;
     }
 
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+        yield return new WaitForSeconds(dashingTime);
+        isDashing = false;
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
+    }
+
+    void Idle()
+    {
+        anim.SetBool("Idle", true);
+        anim.SetBool("ForwardDash", false);
+    }
     void FixedUpdate()
     {
         // Apply movement to the Rigidbody2D
