@@ -10,7 +10,7 @@ public class PlayerScript : MonoBehaviour
     private bool canDash = true;
     private bool isDashing;
     public float dashingPower = 24f;
-    private float dashingTime = 1f;
+    private float dashingTime = 0.2f;
     private float dashingCooldown = 1f;
 
     Rigidbody2D rb;
@@ -27,12 +27,17 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isDashing)
+        if (isDashing)
         {
             return;
         }
         Movement();
-        if (Input.GetKey(KeyCode.D) && Input.GetKeyDown(KeyCode.Q) && movement.x > 0)
+        if (Input.GetKey(KeyCode.D) && Input.GetKeyDown(KeyCode.Q) && movement.x > 0 && canDash == true)
+        {
+            anim.SetBool("ForwardDash", true);
+            StartCoroutine(Dash());
+        }
+        if (Input.GetKey(KeyCode.A) && Input.GetKeyDown(KeyCode.Q) && movement.x < 0 && canDash == true)
         {
             anim.SetBool("ForwardDash", true);
             StartCoroutine(Dash());
@@ -73,9 +78,27 @@ public class PlayerScript : MonoBehaviour
     {
         canDash = false;
         isDashing = true;
+
+        // Store original values to restore later
+        float originalDrag = rb.drag;
+        float originalGravity = rb.gravityScale;
+
+        // Temporarily modify physics for a clean dash
+        rb.drag = 0f;
+        rb.gravityScale = 0f;
+
+        // Set dash velocity
         rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+
+        // Prevent other movement updates from interfering
         yield return new WaitForSeconds(dashingTime);
+
+        // End dash and restore values
         isDashing = false;
+        rb.drag = originalDrag;
+        rb.gravityScale = originalGravity;
+
+        // Cooldown before next dash
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
     }
@@ -87,6 +110,10 @@ public class PlayerScript : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if (isDashing)
+        {
+            return;
+        }
         // Apply movement to the Rigidbody2D
         rb.velocity = movement * speed;
     }

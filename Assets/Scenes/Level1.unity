@@ -859,7 +859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
-  dashingPower: 10000
+  dashingPower: 6
 --- !u!50 &1647558837
 Rigidbody2D:
   serializedVersion: 4
