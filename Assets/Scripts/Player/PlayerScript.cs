@@ -35,11 +35,13 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKey(KeyCode.D) && Input.GetKeyDown(KeyCode.Q) && movement.x > 0 && canDash == true)
         {
             anim.SetBool("ForwardDash", true);
+            anim.SetBool("Walk", false);
             StartCoroutine(Dash());
         }
         if (Input.GetKey(KeyCode.A) && Input.GetKeyDown(KeyCode.Q) && movement.x < 0 && canDash == true)
         {
             anim.SetBool("ForwardDash", true);
+            anim.SetBool("Walk", false);
             StartCoroutine(Dash());
         }
     }
@@ -54,13 +56,29 @@ public class PlayerScript : MonoBehaviour
 
         movement = new Vector2(moveX, moveY).normalized;
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
             transform.localScale = new Vector3(-4, 4, 0);
+            anim.SetBool("Walk", true);
+            anim.SetBool("Idle", false);
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
             transform.localScale = new Vector3(4, 4, 0);
+            anim.SetBool("Walk", true);
+            anim.SetBool("Idle", false);
+        }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            transform.localScale = new Vector3(-4, 4, 0);
+            anim.SetBool("Walk", false);
+            anim.SetBool("Idle", true);
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            transform.localScale = new Vector3(4, 4, 0);
+            anim.SetBool("Walk", false);
+            anim.SetBool("Idle", true);
         }
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
@@ -70,8 +88,15 @@ public class PlayerScript : MonoBehaviour
         {
             transform.localScale = new Vector3(4, 4, 0);
         }
-
+        if(Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            anim.SetBool("Punch", true);
+        }
         rb.velocity = vel;
+    }
+    void StopPunch()
+    {
+        anim.SetBool("Punch", false);
     }
 
     private IEnumerator Dash()
