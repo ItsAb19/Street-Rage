@@ -7,6 +7,7 @@ public class EnemyChase : MonoBehaviour
     public Transform player;
     public float speed = 3f;
     public float stopDistance = 1f;
+    public float chaseRange = 10f; // The maximum distance at which the enemy will start chasing the player
 
     // Health variables
     public int maxHealth = 100;
@@ -33,24 +34,33 @@ public class EnemyChase : MonoBehaviour
         {
             float distance = Vector2.Distance(transform.position, player.position);
 
-            // If far enough and not colliding, move towards the player
-            if (distance > stopDistance && !isCollidingWithPlayer)
+            // Check if the player is within chase range
+            if (distance <= chaseRange)
             {
-                Vector2 newPos = Vector2.MoveTowards(rb.position, player.position, speed * Time.deltaTime);
-                rb.MovePosition(newPos);
+                // If far enough and not colliding, move towards the player
+                if (distance > stopDistance && !isCollidingWithPlayer)
+                {
+                    Vector2 newPos = Vector2.MoveTowards(rb.position, player.position, speed * Time.deltaTime);
+                    rb.MovePosition(newPos);
+                }
+                else
+                {
+                    // Stop movement when within stop distance or colliding with the player
+                    rb.velocity = Vector2.zero;
+                }
+
+                // Flip the enemy's sprite to face the player
+                Vector3 localScale = transform.localScale;
+                localScale.x = (player.position.x > transform.position.x)
+                    ? Mathf.Abs(localScale.x)
+                    : -Mathf.Abs(localScale.x);
+                transform.localScale = localScale;
             }
             else
             {
-                // Stop movement when within stop distance or colliding with the player
+                // Player is out of chase range, so enemy stops moving.
                 rb.velocity = Vector2.zero;
             }
-
-            // Flip the enemy's sprite to face the player
-            Vector3 localScale = transform.localScale;
-            localScale.x = (player.position.x > transform.position.x)
-                ? Mathf.Abs(localScale.x)
-                : -Mathf.Abs(localScale.x);
-            transform.localScale = localScale;
         }
     }
 
