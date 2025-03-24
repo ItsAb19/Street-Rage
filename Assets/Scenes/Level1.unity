@@ -291,7 +291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1647558840}
   speed: 6
-  stopDistance: 2
+  stopDistance: 1
   maxHealth: 100
   stunDuration: 0.5
 --- !u!61 &307540926
