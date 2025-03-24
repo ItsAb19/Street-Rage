@@ -352,6 +352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5519337329b11c48ab98ef7c0cbc684, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerObject: {fileID: 1647558835}
 --- !u!61 &307540928
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1016,8 +1017,9 @@ GameObject:
   - component: {fileID: 1647558839}
   - component: {fileID: 1647558838}
   - component: {fileID: 1647558837}
-  - component: {fileID: 1647558836}
   - component: {fileID: 1647558841}
+  - component: {fileID: 1647558836}
+  - component: {fileID: 1647558842}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1195,6 +1197,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1647558842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647558835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdc3f6da43fe9740bea84f4546dbd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

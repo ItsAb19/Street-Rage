@@ -4,19 +4,21 @@ public class EnemyAttack : MonoBehaviour
 {
     Animator anim;
     BoxCollider2D boxCol;
-
+    public GameObject playerObject;
+    PlayerHealth playerHealth;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         boxCol = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
+        playerHealth = playerObject.GetComponent<PlayerHealth>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void DamagePlayer()
     {
-        
+        playerHealth.currentHealth -= 10;
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
