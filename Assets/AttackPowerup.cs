@@ -21,16 +21,19 @@ public class AttackPowerup : MonoBehaviour
         // Check if the colliding object is tagged "Player"
         if (collision.CompareTag("Player"))
         {
-            // Get the PlayerAttack component from the player object
+            // Get the PlayerAttack component from the colliding player object
             PlayerAttack playerAttack = collision.GetComponent<PlayerAttack>();
             if (playerAttack != null)
             {
+                // Store the original attack power
+                float originalAttackPower = playerAttack.attackPower;
+
                 // Increase the player's attack power by the specified amount
                 playerAttack.attackPower += attackIncrease;
                 Debug.Log("Player's attack power increased by " + attackIncrease);
 
-                // Start coroutine to remove the buff after a delay
-                StartCoroutine(RemoveBuffAfterTime(playerAttack, attackIncrease, buffDuration));
+                // Start the coroutine on the player's MonoBehaviour so it continues even after this power-up is destroyed
+                playerAttack.StartCoroutine(RemoveBuffAfterTime(playerAttack, originalAttackPower, buffDuration));
             }
 
             // Destroy the power-up after it has been collected
@@ -38,10 +41,11 @@ public class AttackPowerup : MonoBehaviour
         }
     }
 
-    private IEnumerator RemoveBuffAfterTime(PlayerAttack playerAttack, float amount, float duration)
+    private IEnumerator RemoveBuffAfterTime(PlayerAttack playerAttack, float originalAttackPower, float duration)
     {
         yield return new WaitForSeconds(duration);
-        playerAttack.attackPower -= amount;
-        Debug.Log("Player's attack power buff removed after " + duration + " seconds");
+        // Reset the player's attack power back to the original value
+        playerAttack.attackPower = originalAttackPower;
+        Debug.Log("Player's attack power reset to original value after " + duration + " seconds");
     }
 }
