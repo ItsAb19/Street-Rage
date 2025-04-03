@@ -30,7 +30,7 @@ public class EnemyAttack : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             anim.SetBool("Attack", true);
-            anim.SetBool("Idle", false);
+            anim.SetBool("Walk", false);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -38,7 +38,7 @@ public class EnemyAttack : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             anim.SetBool("Attack", false);
-            anim.SetBool("Idle", true);
+            anim.SetBool("Walk", true);
         }
     }
 }
