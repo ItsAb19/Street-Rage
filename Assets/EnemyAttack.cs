@@ -1,3 +1,4 @@
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
@@ -6,6 +7,9 @@ public class EnemyAttack : MonoBehaviour
     Animator anim;
     PlayerHealth playerHealth;
     public GameObject playerObj;
+
+    public float attackPower;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,7 +26,7 @@ public class EnemyAttack : MonoBehaviour
 
     void DamagePlayer()
     {
-        playerHealth.currentHealth -= 10;
+        playerHealth.currentHealth -= attackPower;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
