@@ -2038,8 +2038,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 54.52
+  m_fontSizeBase: 54.52
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2076,7 +2076,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -166.41873, w: 0}
+  m_margin: {x: 0, y: 0, z: -237.5578, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2290,7 +2290,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.37, y: 0.62}
+    oldSize: {x: 0.35, y: 0.6}
     newSize: {x: 0.37, y: 0.62}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2428,7 +2428,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1176419885, guid: ef4c24b81d33e4b4db4dfe9c5b79b7fc, type: 3}
+  m_Sprite: {fileID: -1968800200, guid: e9f46f53d6d0e274da32afd3976a033e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2521,7 +2521,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.37, y: 0.62}
+    oldSize: {x: 0.35, y: 0.6}
     newSize: {x: 0.37, y: 0.62}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2567,7 +2567,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.37, y: 0.62}
+    oldSize: {x: 0.35, y: 0.6}
     newSize: {x: 0.37, y: 0.62}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

@@ -1,49 +1,43 @@
 fileFormatVersion: 2
-guid: ef4c24b81d33e4b4db4dfe9c5b79b7fc
+guid: e9f46f53d6d0e274da32afd3976a033e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5669640146241213338
-    second: boxer walk + punch_0
+      213: -8411794515786237042
+    second: Boxer final_0
   - first:
-      213: 477570336767969307
-    second: boxer walk + punch_1
+      213: -188818832940179282
+    second: Boxer final_1
   - first:
-      213: -6797933264792643514
-    second: boxer walk + punch_2
+      213: -6352178304500821977
+    second: Boxer final_2
   - first:
-      213: 3916415487370173626
-    second: boxer walk + punch_3
+      213: 7936841822885144728
+    second: Boxer final_3
   - first:
-      213: -7881408827412071954
-    second: boxer walk + punch_4
+      213: -2982161284536281045
+    second: Boxer final_4
   - first:
-      213: 2782859484244543015
-    second: boxer walk + punch_5
+      213: 7912691097166594970
+    second: Boxer final_5
   - first:
-      213: 77692234202048750
-    second: boxer walk + punch_6
+      213: -4305265353402947041
+    second: Boxer final_6
   - first:
-      213: 2273016561656096613
-    second: boxer walk + punch_7
+      213: -387182444583096215
+    second: Boxer final_7
   - first:
-      213: 2885496716301900860
-    second: boxer walk + punch_8
+      213: -7966161403493302772
+    second: Boxer final_8
   - first:
-      213: -3420862622356647377
-    second: boxer walk + punch_9
+      213: -4987654125241535746
+    second: Boxer final_9
   - first:
-      213: -1409800690887305085
-    second: boxer walk + punch_10
+      213: 8618622359213455796
+    second: Boxer final_10
   - first:
-      213: 4343535975312560844
-    second: boxer walk + punch_11
-  - first:
-      213: -835615385431319263
-    second: boxer walk + punch_12
-  - first:
-      213: -279801536406818700
-    second: boxer walk + punch_13
+      213: -1237225687917365396
+    second: Boxer final_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -191,7 +185,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boxer walk_0
+      name: Boxer Walk_0
       rect:
         serializedVersion: 2
         x: 13
@@ -206,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f35f4fd51447a694c98596f93fa54513
-      internalID: 1176419885
+      spriteID: 578ff5ed86f5d5e4f8bc2214aff6d415
+      internalID: -1968800200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boxer walk_1
+      name: Boxer Walk_1
       rect:
         serializedVersion: 2
         x: 78
@@ -228,14 +222,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3998c66d8c9e1954c9f24aa178eb6e72
-      internalID: 1620228964
+      spriteID: 808bf28188b61b74da0c4d0eb2063304
+      internalID: -61643838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boxer walk_2
+      name: Boxer Walk_2
       rect:
         serializedVersion: 2
         x: 142
@@ -250,18 +244,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaeaa04146c55964398571f3128de5ea
-      internalID: -1295912104
+      spriteID: a82eab4275128c04995b3b3166e48fa1
+      internalID: 514371278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boxer walk_3
+      name: Boxer Walk_3
       rect:
         serializedVersion: 2
-        x: 208
-        y: 193
+        x: 16
+        y: 129
         width: 34
         height: 61
       alignment: 0
@@ -272,17 +266,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b60db6fdd32907444b4238940b9d842e
-      internalID: -1457743050
+      spriteID: b82ff78695205ac41a2d8e44c51b7274
+      internalID: 1665316271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boxer walk_4
+      name: Boxer Walk_4
       rect:
         serializedVersion: 2
-        x: 12
+        x: 76
         y: 129
         width: 36
         height: 60
@@ -294,17 +288,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f90450b69aea03c42945d9ce15ae5e55
-      internalID: -500269135
+      spriteID: bb12ee6643ef746498f58a1f90116af8
+      internalID: 1544211591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boxer walk_5
+      name: Boxer Walk_5
       rect:
         serializedVersion: 2
-        x: 78
+        x: 142
         y: 129
         width: 34
         height: 61
@@ -316,8 +310,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92f444dd1a21c784e80b3fdb919f3996
-      internalID: 1113368635
+      spriteID: bee94a63b5115da4fb06bd8c7269d8cf
+      internalID: 1051419384
       vertices: []
       indices: 
       edges: []
@@ -326,7 +320,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: bafca10812bcbf644bec0c8146f154d7
+    spriteID: 186cc13aa2d344c44891c5b21eb50730
     internalID: 0
     vertices: []
     indices: 
@@ -334,20 +328,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Boxer walk_0: 1176419885
-      Boxer walk_1: 1620228964
-      Boxer walk_10: -1033430967
-      Boxer walk_11: -693212126
-      Boxer walk_12: 958985703
-      Boxer walk_13: -1609053223
-      Boxer walk_2: -1295912104
-      Boxer walk_3: -1457743050
-      Boxer walk_4: -500269135
-      Boxer walk_5: 1113368635
-      Boxer walk_6: -1577059786
-      Boxer walk_7: -1471172799
-      Boxer walk_8: 2004108464
-      Boxer walk_9: 66706463
+      Boxer Walk_0: -1968800200
+      Boxer Walk_1: -61643838
+      Boxer Walk_10: -788578930
+      Boxer Walk_11: -345320002
+      Boxer Walk_2: 514371278
+      Boxer Walk_3: 1665316271
+      Boxer Walk_4: 1544211591
+      Boxer Walk_5: 1051419384
+      Boxer Walk_6: 479280868
+      Boxer Walk_7: 2003774462
+      Boxer Walk_8: -1827784031
+      Boxer Walk_9: -324224236
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
