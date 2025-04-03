@@ -2,6 +2,14 @@ using UnityEngine;
 
 public class HealthCollectible : MonoBehaviour
 {
+    PlayerHealth playerHealth;
+    GameObject playerObj;
+
+    private void Start()
+    {
+        playerObj = GameObject.FindGameObjectWithTag("Player");
+        playerHealth = playerObj.GetComponent<PlayerHealth>();
+    }
     // Amount of health to restore instantly
     public float healthAmount = 40f;
 
@@ -9,7 +17,6 @@ public class HealthCollectible : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // Try to get the PlayerHealth component from the colliding object
-        PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
         if (playerHealth != null)
         {
             // Increase player's health instantly
