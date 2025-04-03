@@ -16,20 +16,25 @@ public class HealthCollectible : MonoBehaviour
     // Called when another collider enters the trigger collider attached to the collectible
     private void OnTriggerEnter(Collider other)
     {
-        // Try to get the PlayerHealth component from the colliding object
-        if (playerHealth != null)
+        // Check if the colliding object is tagged as "Player"
+        if (other.CompareTag("Player"))
         {
-            // Increase player's health instantly
-            playerHealth.currentHealth += healthAmount;
-
-            // Clamp the health so it doesn't go over 100
-            if (playerHealth.currentHealth > 100f)
+            // Get the PlayerHealth component from the colliding object
+            PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
             {
-                playerHealth.currentHealth = 100f;
-            }
+                // Increase player's health instantly
+                playerHealth.currentHealth += healthAmount;
 
-            // Destroy the collectible object
-            Destroy(gameObject);
+                // Clamp the health so it doesn't exceed 100
+                if (playerHealth.currentHealth > 100f)
+                {
+                    playerHealth.currentHealth = 100f;
+                }
+
+                // Destroy the collectible after it's been used
+                Destroy(gameObject);
+            }
         }
     }
 }
