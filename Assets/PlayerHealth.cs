@@ -6,10 +6,12 @@ public class PlayerHealth : MonoBehaviour
     public GameObject greenHealthbar;
     private Image greenHealthbarImage;
 
+    float MaxHealth = 100;
+    public float currentHealth;
     void Start()
     {
-        greenHealthbarImage = greenHealthbar.GetComponent<Image>();
         currentHealth = MaxHealth;
+        greenHealthbarImage = greenHealthbar.GetComponent<Image>();
     }
 
     void OnTriggerEnter2D(Collider2D enemyHitbox)
@@ -20,8 +22,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    float MaxHealth = 100;
-    public float currentHealth;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     // Update is called once per frame
