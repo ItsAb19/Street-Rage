@@ -1,19 +1,40 @@
 fileFormatVersion: 2
-guid: 9203e10a7ff793e4090766876a5350da
+guid: 21a6304950f25c24ea02a1a91d2dbcf3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 369247662335321147
-    second: Brawler punch_0
+      213: 8909234487543380102
+    second: Brawler final_0
   - first:
-      213: 237277240016860999
-    second: Brawler punch_1
+      213: -3813666390443721688
+    second: Brawler final_1
   - first:
-      213: -7519734553422882817
-    second: Brawler punch_2
+      213: 5181006490548747583
+    second: Brawler final_2
   - first:
-      213: 2067255531476799845
-    second: Brawler punch_3
+      213: 2392003648205425412
+    second: Brawler final_3
+  - first:
+      213: -4957383007345121709
+    second: Brawler final_4
+  - first:
+      213: -4864729644165502202
+    second: Brawler final_5
+  - first:
+      213: -8007379315192434673
+    second: Brawler final_6
+  - first:
+      213: -353671176551258703
+    second: Brawler final_7
+  - first:
+      213: 3045731660513624779
+    second: Brawler final_8
+  - first:
+      213: -5555963108423589867
+    second: Brawler final_9
+  - first:
+      213: -2563724936108192758
+    second: Brawler final_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -161,11 +182,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Brawler punch_0
+      name: Brawler final_0
       rect:
         serializedVersion: 2
         x: 12
-        y: 65
+        y: 193
         width: 46
         height: 62
       alignment: 0
@@ -176,18 +197,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 713416b3e4192a044a7c3c411eaff76a
-      internalID: -2008779360
+      spriteID: 380ec19514fe7a5409c3313c38ba80bc
+      internalID: 1162237733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brawler punch_1
+      name: Brawler final_1
       rect:
         serializedVersion: 2
         x: 73
-        y: 65
+        y: 193
         width: 39
         height: 61
       alignment: 0
@@ -198,18 +219,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f9e79cd906f064448a1103d0d364a3e
-      internalID: 936033657
+      spriteID: 60e917a7dd976c5489a508367793f0e5
+      internalID: -594636204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brawler punch_2
+      name: Brawler final_2
       rect:
         serializedVersion: 2
-        x: 9
-        y: 1
+        x: 137
+        y: 193
         width: 35
         height: 61
       alignment: 0
@@ -220,18 +241,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 297fe35db1ec87745a049e5fa04c6619
-      internalID: -2062553678
+      spriteID: 6e9c07c87d4c3d248b51af67d4d41f05
+      internalID: 400348340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brawler punch_3
+      name: Brawler final_3
       rect:
         serializedVersion: 2
-        x: 72
-        y: 1
+        x: 8
+        y: 129
         width: 55
         height: 60
       alignment: 0
@@ -242,8 +263,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6198854e28d809b4d9bf79931c029a89
-      internalID: -1219418116
+      spriteID: b1e1bd46e0c14f141a8a15a0edbab44c
+      internalID: 1855902034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brawler final_4
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 129
+        width: 39
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09217e3c95439d24fb61433f8c706c41
+      internalID: -1720310518
       vertices: []
       indices: 
       edges: []
@@ -252,7 +295,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 158752d3c76a112468c4cb294f098665
+    spriteID: b508dbe6f62e64941b7b899fb98e8aa5
     internalID: 0
     vertices: []
     indices: 
@@ -260,10 +303,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Brawler punch_0: -2008779360
-      Brawler punch_1: 936033657
-      Brawler punch_2: -2062553678
-      Brawler punch_3: -1219418116
+      Brawler final_0: 1162237733
+      Brawler final_1: -594636204
+      Brawler final_10: 1236059976
+      Brawler final_2: 400348340
+      Brawler final_3: 1855902034
+      Brawler final_4: -1720310518
+      Brawler final_5: 1380618314
+      Brawler final_6: -1852046758
+      Brawler final_7: -1065873133
+      Brawler final_8: 1731350861
+      Brawler final_9: 1523456264
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
