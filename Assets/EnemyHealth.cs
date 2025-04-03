@@ -3,11 +3,15 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    public GameObject scoreObj;
+    ScoreScript scoreScr;
+
     public float MaxHealth = 50;
     public float currentHealth;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        scoreScr = scoreObj.GetComponent<ScoreScript>();
         currentHealth = MaxHealth;
     }
 
@@ -16,6 +20,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
+            scoreScr.score += 100;
             Destroy(this.gameObject);
         }
     }
