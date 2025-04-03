@@ -5,17 +5,19 @@ public class PlayerAttack : MonoBehaviour
     GameObject enemy;
     EnemyHealth enemyHealth;
     public bool inRange;
+    public float attackPower;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         inRange = false;
+        attackPower = 25;
     }
 
     void DamageEnemy()
     {
         if(inRange == true)
         {
-            enemyHealth.currentHealth -= 25;
+            enemyHealth.currentHealth -= attackPower;
         }
     }
 
