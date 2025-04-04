@@ -3,34 +3,28 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
 
-    public GameObject greenHealthbar;
-    private Image greenHealthbarImage;
-
-    float MaxHealth = 100;
+    public float maxHealth;
+    public Image healthBar;
     public float currentHealth;
+    // Start is called before the first frame update
     void Start()
     {
-        currentHealth = MaxHealth;
-        greenHealthbarImage = greenHealthbar.GetComponent<Image>();
+        maxHealth = currentHealth;
     }
-
-    void OnTriggerEnter2D(Collider2D enemyHitbox)
-    {
-        if (enemyHitbox.tag == "enemyHitbox")
-        {
-            greenHealthbarImage.fillAmount -= 0.2f;
-        }
-    }
-
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     // Update is called once per frame
     void Update()
     {
-        if(currentHealth <= 0)
+        healthBar.fillAmount = Mathf.Clamp(currentHealth / maxHealth, 0, 1);
+        if (currentHealth <= 0)
         {
             Destroy(this.gameObject);
         }
     }
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+
+    // Update is called once per frame
+  
 }
