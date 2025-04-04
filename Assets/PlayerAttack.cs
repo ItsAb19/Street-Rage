@@ -3,7 +3,11 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     public GameObject attackCrate;
+    public GameObject hpCrate;
+
     GameObject enemy;
+    GameObject destroyAttackCrate;
+    GameObject destroyHpCrate;
     EnemyHealth enemyHealth;
     public bool inRange;
     public float attackPower;
@@ -25,7 +29,11 @@ public class PlayerAttack : MonoBehaviour
     {
         if (inRange == true && attackCrate!= null)
         {
-            Destroy(attackCrate);
+            Destroy(destroyAttackCrate);
+        }
+        if (inRange == true && hpCrate != null)
+        {
+            Destroy(destroyHpCrate);
         }
     }
 
@@ -40,6 +48,12 @@ public class PlayerAttack : MonoBehaviour
         if (collision.CompareTag("Crate"))
         {
             inRange = true;
+            destroyAttackCrate = collision.gameObject;
+        }
+        if (collision.CompareTag("hpCrate"))
+        {
+            inRange = true;
+            destroyHpCrate = collision.gameObject;
         }
     }
 
@@ -50,6 +64,10 @@ public class PlayerAttack : MonoBehaviour
             inRange = false;
         }
         if (collision.CompareTag("Crate"))
+        {
+            inRange = false;
+        }
+        if (collision.CompareTag("hpCrate"))
         {
             inRange = false;
         }
