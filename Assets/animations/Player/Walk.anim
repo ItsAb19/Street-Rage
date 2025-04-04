@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ForwardDash
+  m_Name: Walk
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,15 +21,19 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 423354208, guid: bbb0b7796374afc4f9e1cf516d5c5602, type: 3}
-    - time: 0.1
-      value: {fileID: 1017941463, guid: bbb0b7796374afc4f9e1cf516d5c5602, type: 3}
-    - time: 0.18333334
-      value: {fileID: -1344853651, guid: bbb0b7796374afc4f9e1cf516d5c5602, type: 3}
-    - time: 0.26666668
-      value: {fileID: -48377252, guid: bbb0b7796374afc4f9e1cf516d5c5602, type: 3}
-    - time: 0.36666667
-      value: {fileID: 616098672, guid: bbb0b7796374afc4f9e1cf516d5c5602, type: 3}
+      value: {fileID: -975694411, guid: e46acf6fc35bfc34b8b9e2d90f52382c, type: 3}
+    - time: 0.15
+      value: {fileID: 1400856867, guid: e46acf6fc35bfc34b8b9e2d90f52382c, type: 3}
+    - time: 0.3
+      value: {fileID: -692691399, guid: e46acf6fc35bfc34b8b9e2d90f52382c, type: 3}
+    - time: 0.45
+      value: {fileID: -1148438325, guid: e46acf6fc35bfc34b8b9e2d90f52382c, type: 3}
+    - time: 0.6
+      value: {fileID: 703289876, guid: e46acf6fc35bfc34b8b9e2d90f52382c, type: 3}
+    - time: 0.75
+      value: {fileID: -1436964429, guid: e46acf6fc35bfc34b8b9e2d90f52382c, type: 3}
+    - time: 0.9
+      value: {fileID: -675283543, guid: e46acf6fc35bfc34b8b9e2d90f52382c, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -48,7 +52,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.38333336
+    m_StopTime: 0.9166666
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -67,11 +71,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.36666667
-    functionName: Idle
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []

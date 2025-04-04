@@ -1,70 +1,55 @@
 fileFormatVersion: 2
-guid: 6942b9949fd2d2d44ae6a61a82724513
+guid: e46acf6fc35bfc34b8b9e2d90f52382c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7190717869039647683
-    second: Player movement + punch_0
+      213: -6263414868001714665
+    second: Player final_0
   - first:
-      213: -8182694142432077190
-    second: Player movement + punch_1
+      213: 8975326138451303381
+    second: Player final_1
   - first:
-      213: -5596365424995313609
-    second: Player movement + punch_2
+      213: 7887636841186493166
+    second: Player final_2
   - first:
-      213: 8137047592461952808
-    second: Player movement + punch_3
+      213: -845911650471435545
+    second: Player final_3
   - first:
-      213: 6286366877490644719
-    second: Player movement + punch_4
+      213: -5519429007932792903
+    second: Player final_4
   - first:
-      213: -1810142817668133378
-    second: Player movement + punch_5
+      213: 7200553207063573791
+    second: Player final_5
   - first:
-      213: 7686517533915347986
-    second: Player movement + punch_6
+      213: -4865280303034393029
+    second: Player final_6
   - first:
-      213: 2773412392552344700
-    second: Player movement + punch_7
+      213: 2193187374567637745
+    second: Player final_7
   - first:
-      213: 1105843468162260823
-    second: Player movement + punch_8
+      213: -7469348133549512523
+    second: Player final_8
   - first:
-      213: 7683287277860487901
-    second: Player movement + punch_9
+      213: 3307313258780549911
+    second: Player final_9
   - first:
-      213: -3139717383325953797
-    second: Player movement + punch_10
+      213: -6102414209093342014
+    second: Player final_10
   - first:
-      213: 641377418865529976
-    second: Player movement + punch_11
+      213: 76077218294744911
+    second: Player final_11
   - first:
-      213: -3217427967441883047
-    second: Player movement + punch_12
+      213: 814389376941066917
+    second: Player final_12
   - first:
-      213: -3168288048754213346
-    second: Player movement + punch_13
+      213: -2493061758123476167
+    second: Player final_13
   - first:
-      213: -3750920805174924869
-    second: Player movement + punch_14
+      213: -7973773788853251104
+    second: Player final_14
   - first:
-      213: 909682031900517863
-    second: Player movement + punch_15
-  - first:
-      213: -4811107853959215828
-    second: Player movement + punch_16
-  - first:
-      213: -3534587911896772378
-    second: Player movement + punch_17
-  - first:
-      213: -4594951631597478581
-    second: Player movement + punch_18
-  - first:
-      213: -4012951769594785817
-    second: Player movement + punch_19
-  - first:
-      213: -1511511312927923649
-    second: Player movement + punch_20
+      213: -6616016990426304266
+    second: Player final_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -212,89 +197,155 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player movement + punch_17
+      name: Player Walk_5
       rect:
         serializedVersion: 2
-        x: 142
-        y: 65
+        x: 78
+        y: 129
         width: 37
         height: 62
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc2b1325e564d8b49ad1eb4003da0547
-      internalID: -113359916
+      spriteID: 3306b40fe48ca8b48a89959fcf05aae0
+      internalID: -975694411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player movement + punch_18
+      name: Player Walk_6
       rect:
         serializedVersion: 2
-        x: 206
+        x: 143
+        y: 129
+        width: 33
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a0fb1bb32148d41b70101eca05db99
+      internalID: 1400856867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Walk_7
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 129
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb429d938ed0a54cb9efc08fa116d6f
+      internalID: -692691399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Walk_8
+      rect:
+        serializedVersion: 2
+        x: 14
         y: 65
-        width: 35
+        width: 36
         height: 61
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b8d07b263d41354cba9b7500de05b9e
-      internalID: 996456683
+      spriteID: f61cb154276d22947a3c82ad9381e26c
+      internalID: -1148438325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player movement + punch_19
+      name: Player Walk_9
       rect:
         serializedVersion: 2
-        x: 266
+        x: 80
         y: 65
-        width: 49
-        height: 61
+        width: 32
+        height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7874dc256b56a54b8a6ab1a341b20f4
-      internalID: 917797638
+      spriteID: c940ae9a8b51d6f408056a9b0e33f93e
+      internalID: 703289876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player movement + punch_20
+      name: Player Walk_10
       rect:
         serializedVersion: 2
-        x: 10
-        y: 1
-        width: 43
-        height: 61
+        x: 143
+        y: 66
+        width: 41
+        height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f966fe1bac69b740b5b940051249cb5
-      internalID: -454968103
+      spriteID: 36913b8ff0d3ac04b99482d44eb2e2f9
+      internalID: -1436964429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Walk_11
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 65
+        width: 28
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43f084f30fe6164ca3a1d0b0959f740
+      internalID: -675283543
       vertices: []
       indices: 
       edges: []
@@ -303,7 +354,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 70520fb0a274fe84ea0ddcda5d637164
+    spriteID: 446046fd8fb3ba24ca1bed7142e43f8e
     internalID: 0
     vertices: []
     indices: 
@@ -311,27 +362,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player movement + punch_0: 955733010
-      Player movement + punch_1: -538752282
-      Player movement + punch_10: 1904406155
-      Player movement + punch_11: 738861424
-      Player movement + punch_12: 200723946
-      Player movement + punch_13: -1679323124
-      Player movement + punch_14: 1823538459
-      Player movement + punch_15: 1479838946
-      Player movement + punch_16: 1568595913
-      Player movement + punch_17: -113359916
-      Player movement + punch_18: 996456683
-      Player movement + punch_19: 917797638
-      Player movement + punch_2: 957127408
-      Player movement + punch_20: -454968103
-      Player movement + punch_3: -574682835
-      Player movement + punch_4: 345477230
-      Player movement + punch_5: 913619476
-      Player movement + punch_6: 1400342916
-      Player movement + punch_7: 800498219
-      Player movement + punch_8: -1296961460
-      Player movement + punch_9: 1193827659
+      Player Walk_0: -145955761
+      Player Walk_1: -986324049
+      Player Walk_10: -1436964429
+      Player Walk_11: -675283543
+      Player Walk_12: 798828918
+      Player Walk_13: -1880799134
+      Player Walk_14: -624320894
+      Player Walk_15: -1703314364
+      Player Walk_2: 700662102
+      Player Walk_3: 1619053608
+      Player Walk_4: 1949010845
+      Player Walk_5: -975694411
+      Player Walk_6: 1400856867
+      Player Walk_7: -692691399
+      Player Walk_8: -1148438325
+      Player Walk_9: 703289876
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
