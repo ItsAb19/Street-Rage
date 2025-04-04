@@ -3624,11 +3624,10 @@ GameObject:
   - component: {fileID: 1572930308}
   - component: {fileID: 1572930307}
   - component: {fileID: 1572930306}
-  - component: {fileID: 1572930309}
   - component: {fileID: 1572930310}
   m_Layer: 0
   m_Name: ATK crate_0
-  m_TagString: Untagged
+  m_TagString: Crate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3749,21 +3748,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1572930309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1572930305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03fb204e24048ea4ea08054e0df5d406, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreObj: {fileID: 0}
-  MaxHealth: 50
-  currentHealth: 0
 --- !u!50 &1572930310
 Rigidbody2D:
   serializedVersion: 4
@@ -4158,6 +4142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15cebc277992bb54986762c49ad8c1fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackCrate: {fileID: 1572930305}
   inRange: 0
   attackPower: 0
 --- !u!61 &1647558844
