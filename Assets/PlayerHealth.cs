@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
 
@@ -18,7 +19,7 @@ public class PlayerHealth : MonoBehaviour
         healthBar.fillAmount = Mathf.Clamp(currentHealth / maxHealth, 0, 1);
         if (currentHealth <= 0)
         {
-            Destroy(this.gameObject);
+            SceneManager.LoadScene(2);
         }
     }
 
