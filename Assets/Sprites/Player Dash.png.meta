@@ -1,58 +1,55 @@
 fileFormatVersion: 2
-guid: 7840b64f7c91ca64a8d3e989f68038de
+guid: bbb0b7796374afc4f9e1cf516d5c5602
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3109792216677501324
-    second: player dash + walk_0
+      213: -6263414868001714665
+    second: Player final_0
   - first:
-      213: 8002706519245060400
-    second: player dash + walk_1
+      213: 8975326138451303381
+    second: Player final_1
   - first:
-      213: 7537440147387789451
-    second: player dash + walk_2
+      213: 7887636841186493166
+    second: Player final_2
   - first:
-      213: 3075634412550592684
-    second: player dash + walk_3
+      213: -845911650471435545
+    second: Player final_3
   - first:
-      213: -4038359490662995547
-    second: player dash + walk_4
+      213: -5519429007932792903
+    second: Player final_4
   - first:
-      213: 8940121439397605970
-    second: player dash + walk_5
+      213: 7200553207063573791
+    second: Player final_5
   - first:
-      213: 3993895402829123062
-    second: player dash + walk_6
+      213: -4865280303034393029
+    second: Player final_6
   - first:
-      213: -3855916676516856418
-    second: player dash + walk_7
+      213: 2193187374567637745
+    second: Player final_7
   - first:
-      213: -2676525429701959474
-    second: player dash + walk_8
+      213: -7469348133549512523
+    second: Player final_8
   - first:
-      213: -2161909576901057089
-    second: player dash + walk_9
+      213: 3307313258780549911
+    second: Player final_9
   - first:
-      213: -3407086804770826921
-    second: player dash + walk_10
+      213: -6102414209093342014
+    second: Player final_10
   - first:
-      213: -8768292450581536147
-    second: player dash + walk_11
+      213: 76077218294744911
+    second: Player final_11
   - first:
-      213: 6387037047899023978
-    second: player dash + walk_12
+      213: 814389376941066917
+    second: Player final_12
   - first:
-      213: -2873626820044844211
-    second: player dash + walk_13
+      213: -2493061758123476167
+    second: Player final_13
   - first:
-      213: 1810922820450148843
-    second: player dash + walk_14
+      213: -7973773788853251104
+    second: Player final_14
   - first:
-      213: -6690456690792973887
-    second: player dash + walk_15
-  - first:
-      213: -2113269286817447250
-    second: player dash + walk_16
+      213: -6616016990426304266
+    second: Player final_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -200,155 +197,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player dash + walk_11
+      name: Player Dash_0
       rect:
         serializedVersion: 2
-        x: 207
-        y: 129
-        width: 33
-        height: 61
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d62295cf874c05680800000000000000
-      internalID: -8768292450581536147
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player dash + walk_12
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 65
-        width: 28
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a6ae747ea5053a850800000000000000
-      internalID: 6387037047899023978
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player dash + walk_13
-      rect:
-        serializedVersion: 2
-        x: 78
-        y: 65
-        width: 36
-        height: 61
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d43113ed1a3de18d0800000000000000
-      internalID: -2873626820044844211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player dash + walk_14
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 65
-        width: 32
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: be16494e5b0b12910800000000000000
-      internalID: 1810922820450148843
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player dash + walk_15
-      rect:
-        serializedVersion: 2
-        x: 207
-        y: 66
-        width: 41
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c936285619b623a0800000000000000
-      internalID: -6690456690792973887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player dash + walk_16
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 1
-        width: 28
-        height: 60
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ea2c08cb7c82ca2e0800000000000000
-      internalID: -2113269286817447250
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player dash + walk_10
-      rect:
-        serializedVersion: 2
-        x: 142
-        y: 129
+        x: 14
+        y: 193
         width: 37
         height: 62
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb163c86af2a48b4b8186887543cd430
-      internalID: -706052802
+      spriteID: 071f0fa8f85b7764d8133e5e64ef7b9f
+      internalID: 423354208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Dash_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 193
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1def0c986c1985d468daf1aa2141064c
+      internalID: 1017941463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Dash_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 193
+        width: 32
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2443197797bca2d4799b6108dfd174a3
+      internalID: -1344853651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Dash_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 193
+        width: 33
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22914e98b8635b14e8e21c3eb004b867
+      internalID: -48377252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Dash_4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 129
+        width: 33
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c066a05b7d7bb3498799904f0843438
+      internalID: 616098672
       vertices: []
       indices: 
       edges: []
@@ -357,7 +310,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f571c4df5134cae43b0541d282117abf
+    spriteID: 1665b3bec5a552040b13d8d5c25cc006
     internalID: 0
     vertices: []
     indices: 
@@ -365,23 +318,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      player dash + walk_0: -1798868321
-      player dash + walk_1: -1914564233
-      player dash + walk_10: -706052802
-      player dash + walk_11: -8768292450581536147
-      player dash + walk_12: 6387037047899023978
-      player dash + walk_13: -2873626820044844211
-      player dash + walk_14: 1810922820450148843
-      player dash + walk_15: -6690456690792973887
-      player dash + walk_16: -2113269286817447250
-      player dash + walk_2: 2051678554
-      player dash + walk_3: 497915403
-      player dash + walk_4: -74990225
-      player dash + walk_5: 681638558
-      player dash + walk_6: 3993895402829123062
-      player dash + walk_7: -2116831765
-      player dash + walk_8: 2145169663
-      player dash + walk_9: -531315518
+      Player Dash_0: 423354208
+      Player Dash_1: 1017941463
+      Player Dash_10: -135569669
+      Player Dash_11: -864846373
+      Player Dash_12: -2051216666
+      Player Dash_13: 2034987332
+      Player Dash_14: -209068006
+      Player Dash_15: -226219059
+      Player Dash_2: -1344853651
+      Player Dash_3: -48377252
+      Player Dash_4: 616098672
+      Player Dash_5: -1727001592
+      Player Dash_6: 111881806
+      Player Dash_7: -683540134
+      Player Dash_8: -49682850
+      Player Dash_9: -839489078
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
