@@ -16,12 +16,15 @@ public class PlayerScript : MonoBehaviour
     Rigidbody2D rb;
     Transform playerTransform;
     Animator anim;
+    BoxCollider2D boxCol;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         playerTransform = GetComponent<Transform>();
         anim = GetComponent<Animator>();
+        boxCol = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -90,12 +93,14 @@ public class PlayerScript : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.Mouse0))
         {
+            boxCol.enabled = true;
             anim.SetBool("Punch", true);
         }
         rb.velocity = vel;
     }
     void StopPunch()
     {
+        boxCol.enabled = false;
         anim.SetBool("Punch", false);
     }
 
